@@ -1,9 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
- <rect width="512" height="512" rx="122" fill="#e9eee7"/>
- <g transform="translate(256 256) rotate(-12) translate(-256 -256)">
- <path d="M115 120 Q115 108 127 108H243 Q254 108 254 121V243 Q254 254 241 254H128 Q115 254 115 242Z" fill="#51755e"/>
- <path d="M268 109 H386 Q397 109 397 120V239 Q397 251 385 251H268 Q256 251 256 240V123 Q256 109 268 109Z" fill="#9cb19f"/>
- <path d="M125 265H242Q254 265 254 277V390Q254 402 242 402H125Q113 402 113 390V277Q113 265 125 265Z" fill="#b9cdb8"/>
- <path d="M268 264H384Q397 264 397 276V389Q397 402 384 402H268Q256 402 256 390V276Q256 264 268 264Z" fill="#75977b"/>
- </g>
+<rect width="512" height="512" rx="118" fill="#F3EFE7"/>
+<circle cx="405" cy="115" r="49" fill="#DFE6D8"/><circle cx="105" cy="392" r="28" fill="#E6DED2"/>
+<path d="M145 212 L169 126 Q178 104 199 126 L235 159 Q256 153 281 160 L316 128 Q337 106 348 132 L372 213 Q390 247 375 309 Q357 389 259 391 Q158 392 136 310 Q125 268 145 212Z" fill="#FFFBF4" stroke="#766558" stroke-width="14" stroke-linejoin="round"/>
+<path d="M166 180 L184 150 L217 176Z" fill="#E7D2CC"/><path d="M297 176 L331 150 L350 180Z" fill="#E7D2CC"/>
+<ellipse cx="179" cy="293" rx="25" ry="15" fill="#F4D7D4"/><ellipse cx="339" cy="293" rx="25" ry="15" fill="#F4D7D4"/>
+<path d="M205 263 Q220 251 233 263" stroke="#5F5750" stroke-width="11" stroke-linecap="round" fill="none"/><path d="M279 263 Q294 251 309 263" stroke="#5F5750" stroke-width="11" stroke-linecap="round" fill="none"/>
+<path d="M252 278 L263 283 L274 278 Q270 294 263 294 Q256 294 252 278Z" fill="#9C776A"/>
+<path d="M263 293 Q248 306 236 293 M263 293 Q279 306 289 293" fill="none" stroke="#766558" stroke-width="7" stroke-linecap="round"/>
+<path d="M257 375 C252 360 242 354 225 347" stroke="#A7B9A4" stroke-width="11" fill="none" stroke-linecap="round"/>
+<path d="M240 354 Q205 361 202 330 Q239 329 240 354" fill="#95AF93"/>
+<path d="M257 369 Q283 348 313 353 Q306 378 257 369" fill="#789F84"/>
 </svg>
