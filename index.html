@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#f7f7f2" />
+  <meta name="theme-color" content="#fdf9f5" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="하루의 조각" />
@@ -11,13 +11,13 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" type="image/svg+xml" href="app-icon.svg" />
   <link rel="apple-touch-icon" href="app-icon-180.png" />
-  <link rel="stylesheet" href="styles.css?v=7" />
+  <link rel="stylesheet" href="styles.css?v=16" />
   <title>하루의 조각 — 나의 일상 수집</title>
 </head>
 <body>
   <div id="app" class="app-shell">
     <aside class="sidebar">
-      <div class="brand"><div class="brand-mark"><span></span><span></span><span></span><span></span></div><div><strong>하루의 조각</strong><small>ordinary, collected.</small></div></div>
+      <div class="brand"><img class="brand-paw" src="app-icon.svg" alt="" /><div><strong>하루의 조각</strong><small>ordinary, collected.</small></div></div>
       <div class="nav-label">MY SPACE</div>
       <nav id="sideNav" aria-label="화면 선택"></nav>
       <div class="sidebar-spacer"></div>
@@ -25,14 +25,14 @@
       <div class="side-foot">추가 결제 없는 나의 작은 공간</div>
     </aside>
     <div class="main-wrap">
-      <header class="topbar"><div class="topbar-title"><div class="mobile-mark">✳</div><span>하루의 조각</span></div><div class="topbar-right"><span id="themeBadge" class="theme-tag">DAY MODE</span><span id="topDate" class="top-date"></span></div></header>
+      <header class="topbar"><div class="topbar-title"><img class="mobile-paw" src="app-icon.svg" alt="" /><span>하루의 조각</span></div><div class="topbar-right"><span id="themeBadge" class="theme-tag">MINIMAL</span><span id="topDate" class="top-date"></span></div></header>
       <main id="main" class="main-content" aria-live="polite"></main>
     </div>
     <nav id="bottomNav" class="bottom-nav" aria-label="화면 선택"></nav>
   </div>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <input id="backupInput" type="file" accept="application/json,.json" hidden />
-  <script src="app.js?v=7" defer></script>
+  <script src="app.js?v=16" defer></script>
   <script type="module" src="sync.js"></script>
 </body>
 </html>
