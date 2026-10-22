@@ -1,5 +1,5 @@
 // Keep source code fresh on GitHub Pages while retaining offline support.
-const CACHE='daypiece-shell-v16-9-food-search';
+const CACHE='daypiece-shell-v16-10-room-and-food';
 const APP_FILES=['./jogaki-room.webp','./jogaki-cat.webp','./mascot.svg','./eggroll.png','./sundubu.png','./budae.png','./','./index.html','./styles.css','./app.js','./sync.js','./manifest.webmanifest','./app-icon.svg','./app-icon-192.png','./app-icon-512.png','./app-icon-180.png'];
 self.addEventListener('install',event=>{
  event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(APP_FILES.map(path=>new Request(path,{cache:'reload'})))).then(()=>self.skipWaiting()));
