@@ -241,3 +241,56 @@ body{background:#fdf9f5}.topbar{background:#fffcf9}.sidebar{background:#fffbf7}.
 .routine-form-actions{display:flex;gap:8px;flex-wrap:wrap}
 .routine-form-actions button{min-height:40px}
 @media(max-width:450px){.routine-settings{padding:10px;gap:7px}.routine-edit-button{padding:8px;font-size:11px}.routine-settings .icon-button{width:30px}}
+
+/* V16.4: Real text and exactly one CSS speech-tail, original cat untouched. */
+.room-art-scene{position:relative;width:100%;container-type:inline-size}
+.room-art-scene>img{display:block;width:100%;height:auto}
+.room-speech-bubble{position:absolute;left:50%;top:22.5%;transform:translateX(-50%);width:83%;height:14%;border-radius:999px;background:#fffdf8;box-shadow:0 1px 4px rgba(112,78,57,.13);display:flex;align-items:center;justify-content:center;gap:.25em;white-space:nowrap;line-height:1.2;color:#775344;font-weight:750;font-size:clamp(9px,2.75cqw,18px);letter-spacing:-.03em;z-index:1}
+.room-speech-bubble::after{content:"";position:absolute;width:3.2%;aspect-ratio:1;left:50%;bottom:-5%;transform:translateX(-50%) rotate(45deg);background:#fffdf8;border-radius:0 0 2px 0;z-index:-1}
+.room-speech-heart{color:#ef8f91;font-weight:800;font-size:1.2em}
+@media(max-width:800px){.room-art-scene{width:auto;height:100%;aspect-ratio:584/644}.room-art-scene>img{height:100%;width:100%;max-width:none;max-height:none;object-fit:contain}}
+
+/* V16.5 — mood-aware diary album and tiny real-weather drawings. */
+.mini-album-image{display:block;position:relative;width:100%;border-radius:10px;overflow:hidden;aspect-ratio:1 / 1;background:#f8ede2}
+.mini-album-image>img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+.mini-album-weather{position:absolute;top:5px;right:5px;display:inline-flex;align-items:center;justify-content:center;gap:1px;background:rgba(255,252,248,.95);border:1px solid rgba(222,204,192,.7);border-radius:999px;min-height:22px;padding:2px 5px;color:#79675d;font-size:10px;font-weight:700;box-shadow:0 1px 3px #835c391c;white-space:nowrap;line-height:1}
+.mini-album-weather svg{display:block;flex:none;width:15px;height:15px}
+.mini-album-weather.missing{background:rgba(255,252,248,.82);color:#a3968e;font-size:9px}
+.mini-album{display:flex;flex-direction:column;align-items:stretch;gap:3px;padding:7px 7px 10px}
+.mini-album strong{font-size:13px;margin:3px 0 0;line-height:1.2}
+.mini-album small{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:11px;min-width:0;line-height:1.4}
+.pet-room-mood-thumb{width:38px;height:38px;object-fit:cover;border-radius:10px;flex:none;border:1px solid #f1e5dc;background:#f8ede2}
+@media(max-width:380px){.mini-album-grid{gap:7px}.mini-album{padding:5px 5px 9px}.mini-album-weather{top:3px;right:3px;padding:1px 3px;min-height:20px;font-size:9px}.mini-album-weather svg{height:13px;width:13px}.mini-album-weather.missing span{font-size:8px}}
+
+
+/* V16.6 — useful collected objects and one meal sticker; preserve the original cat illustration. */
+.room-decor,.room-food-sticker{position:absolute;z-index:2;display:grid;place-items:center;pointer-events:none;box-sizing:border-box;filter:drop-shadow(0 2px 2px rgba(94,61,46,.18))}
+.room-decor{width:13%;aspect-ratio:1;background:rgba(255,252,243,.94);border:1px solid #d9b7a4;border-radius:30%;color:#a97c6a}
+.room-decor svg{width:68%;height:68%;stroke-width:1.75;max-width:100%;max-height:100%}
+.room-decor-shelf{top:6%;left:13%;transform:rotate(-10deg)}
+.room-decor-lamp{top:40%;right:6%;transform:rotate(9deg)}
+.room-decor-toy{bottom:5%;left:12%;transform:rotate(-8deg)}
+.room-food-sticker{right:5%;top:68%;width:22%;aspect-ratio:1;background:#fff8eedf;border:2px solid #fffbf8;border-radius:50%;padding:3%;box-shadow:0 3px 8px #74584430;overflow:hidden}
+.room-food-plate{display:grid;place-items:center;width:100%;height:100%;overflow:hidden;border-radius:50%}
+.room-food-plate>svg,.room-food-plate>img{width:100%!important;height:100%!important;max-width:100%;max-height:100%;object-fit:contain;display:block;padding:0!important;overflow:hidden}
+.room-tip{font-size:12px;line-height:1.8;color:#977e72;word-break:keep-all;margin:0 0 15px}
+.room-zone-title{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:12px 0 10px;flex-wrap:wrap}
+.room-zone-title strong{font-size:14px;color:#634b43}.room-zone-title>span{font-size:11px;color:#aa8d82}
+.room-food-zone{background:#fff9f5;border:1px solid #f0e6dc;border-radius:15px;padding:12px;margin-bottom:8px}
+.room-food-choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(84px,1fr));gap:8px}
+.room-food-choice{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:4px;border:1px solid #f0ded3;background:#fffefc;border-radius:13px;padding:9px 6px 7px;min-width:0;color:#76635b}
+.room-food-choice.is-selected{border-color:#eaa39f;background:#fff0ed;box-shadow:0 0 0 1px #eaa39f33}
+.room-food-choice-art{width:62px;height:62px;max-width:100%;display:grid;place-items:center;overflow:hidden;border-radius:12px;background:#fffaf5}
+.room-food-choice-art img,.room-food-choice-art svg{display:block;width:100%!important;height:100%!important;object-fit:contain;padding:3px!important;box-sizing:border-box}
+.room-food-choice-title{font-size:11px;line-height:1.45;font-weight:650;word-break:keep-all;text-align:center;overflow-wrap:break-word}
+.room-picked-tag{font-size:10px;color:#d97978;font-weight:750}
+.room-food-remove,.inline-go{color:#ce7778;background:none;border:0;padding:4px;font-size:11px;font-weight:700}
+.room-food-remove{display:block;margin:8px 0 0 auto}
+.room-food-empty{font-size:12px;line-height:1.65;word-break:keep-all;color:#9b897f}
+.room-reward-action{margin-top:12px}
+.collection-interactive .collect-item{display:flex;flex-direction:column;align-items:center;gap:5px;min-width:0}
+.collection-interactive .collect-item p{flex:1;word-break:keep-all;overflow-wrap:break-word}
+.collection-interactive .room-item-placed{background:#fff1ee;border-color:#efb1ae}
+.room-decor-toggle{margin-top:7px;border:1px solid #eedbd2;background:#fff9f4;padding:7px 9px;border-radius:999px;font-size:11px;color:#bd7b75;font-weight:750;min-height:31px}
+.room-decor-toggle.on{background:#eaa5a2;color:#fff;border-color:#eaa5a2}
+@media(max-width:430px){.room-food-choices{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.room-food-choice-art{width:58px;height:58px}.room-food-choice{padding:8px 3px}.room-decor svg{stroke-width:1.7}}
